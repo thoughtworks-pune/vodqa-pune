@@ -1,0 +1,33 @@
+<p><%= event[:title] %></p>
+<% if event[:subtitle] %>
+    <p><small><%= event[:subtitle] %></small></p>
+<% end %>
+<% if event[:subsection] %>
+<% @agenda[:subsection] && @agenda[:subsection].each_with_index do |subsection, j| %>
+
+    <p><small><%= agenda[:subsection] %></small></p>
+ <% end %>
+ <% end %>
+<% if event[:image] %>
+    <p><img src="img/speaker/<%= event[:image] %>" alt="<%= event[:speaker] %>" /></p>
+<% end %>
+<% if event[:speaker] %>
+    <p><small>By:
+    <% if event[:profile] %>
+    <a href="<%= event[:profile] %>" rel="nofollow" target="_blank"><%= event[:speaker] %></a>
+    <% else %>
+        <%= event[:speaker] %>
+    <% end %>
+    </small></p>
+<% end %>
+<% if event[:speaker_profile] %>
+  <p><small> <%= event[:speaker_profile] %> </small></p>
+<% end %>
+<% if event[:resources] %>
+    <p><small>Resources:
+    <% event[:resources].each_with_index do |resource, i| %>
+        <a href="<%= resource[:url] %>" rel="nofollow" target="_blank"><%= resource[:title] %></a>
+        <%= ' &bull; ' if i != event[:resources].length - 1 %>
+    <% end %>
+    </small></p>
+<% end %>
