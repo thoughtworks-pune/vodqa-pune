@@ -37,6 +37,7 @@
 //
 // SECTION STYLES
 //
+
 .feature
   padding: 1em 0 2em 0
   position: relative
@@ -285,6 +286,8 @@
   $alt-fg: $white
   +override-colors($main-fg,$main-bg,$alt-fg)
   background: #83ba81
+  .border-dashed
+    border-bottom: 1px dashed lighten($main-bg, 30%)
 
   .timings
     .row
@@ -334,8 +337,6 @@
         .summary
           +experimental(transform-origin, 0% 50%)
           text-align: left
-          p
-            padding-right: 3.15em
           img
             position: absolute
             right: 1em

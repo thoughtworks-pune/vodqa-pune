@@ -15,4 +15,14 @@ module GeekHelper
   def latest
     @@first ||= events.first
   end
+
+  def each_slice_with_continuous_index(collection, limit, &block)
+    index = 1
+    collection.each_slice(limit) do |c|
+      c.each do |element|
+        block.call(element, index)
+        index = index + 1
+      end
+    end
+  end
 end
