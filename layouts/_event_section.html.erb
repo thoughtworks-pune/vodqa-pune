@@ -12,7 +12,7 @@
     <p><img src="img/speaker/<%= event[:image] %>" alt="<%= event[:speaker] %>" /></p>
 <% end %>
 <% if event[:speaker] %>
-    <p><small>By:
+    <p class="speakers"><small>By:
     <% if event[:profile] %>
     <a href="<%= event[:profile] %>" rel="nofollow" target="_blank"><%= event[:speaker] %></a>
     <% else %>

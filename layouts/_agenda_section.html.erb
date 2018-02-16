@@ -21,7 +21,7 @@
                     <%else%>
                         <% each_slice_with_continuous_index(agenda[:events], 3) do |event, index|%>
                             <div class="large-4 columns">
-                                <b><span class="border-dashed">Track <%= index %></span> </b><br><br>
+                                <span class="border-dashed span">Track <%= index %></span><br><br>
                                 <%= render '_event_section', :event=>event %>
                             </div>
                         <% end %>
