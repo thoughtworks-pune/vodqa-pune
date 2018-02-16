@@ -3896,6 +3896,8 @@ button, .button {
       color: #b2e5cd; }
   #agenda code, #agenda abbr, #agenda acronym {
     color: black; }
+  #agenda .border-dashed {
+    border-bottom: 1px dashed #44ffa8; }
   #agenda .timings .row {
     border-bottom: 1px dashed #44ffa8;
     margin-bottom: 0;
@@ -3950,8 +3952,6 @@ button, .button {
         -o-transform-origin: 0% 50%;
         transform-origin: 0% 50%;
         text-align: left; }
-        #agenda .timings .row .summary p {
-          padding-right: 3.15em; }
         #agenda .timings .row .summary img {
           position: absolute;
           right: 1em;
