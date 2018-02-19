@@ -490,13 +490,6 @@ p {
   line-height: 1.25;
   margin-bottom: 0.5em;
   text-rendering: optimizeLegibility; }
-
-  p .capitalize{
-    font-size: 1.25 em;
-    font-weight: bold;
-    text-transform: capitalize;
-
-  }
   p aside {
     font-size: 0.875em;
     line-height: 1.35;
