@@ -2,7 +2,7 @@
     <div class="fixed">
         <nav class="top-bar">
             <ul class="title-area">
-                <li class="name"><h1><a href="./">VodQA Pune &raquo; <span><%= start_date(latest).strftime("%b %-d") %></span></a></h1></li>
+                <li class="name"><h1><a href="./">vodQA Pune &raquo; <B><span><%= start_date(latest).strftime("%b %-d") %></span></B></a></h1></li>
                 <li class="toggle-topbar menu-icon"><a href="#"></a></li>
             </ul>
             <section class="top-bar-section">
@@ -16,7 +16,7 @@
                     <% if latest[:participate] %>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLScdBjIRmT4rdolKT-RqlUCtNAZkXxUixdp6kr-5fjWnaYA_ZA/viewform?c=0&w=1" target="_blank" rel="nofollow"
                            onclick="ga('send', 'event', 'participate', 'participate')">
-                            Participate
+                           <B> Participate</B>
                         </a>
                     <% end %>
                     </li>
